@@ -1,0 +1,157 @@
+@import '../../publico/css/base.css';
+/* Numero de Colunas */
+/* por % */
+/* Tamanho da quebra (mobile) */
+.linha,
+.col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.linha {
+  max-width: 1080px;
+  margin: 0px auto;
+  padding: 0 1%;
+}
+.linha:before,
+.linha:after {
+  content: "";
+  display: table;
+}
+.linha:after {
+  clear: both;
+}
+.linha .linha {
+  margin: 0 -1%;
+}
+.col {
+  float: left;
+  width: 100%;
+  margin-bottom: 2%;
+  padding: 0px 0.3%;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .col {
+    margin: 0 0.5%;
+  }
+  .c1 {
+    width: 7.33333333%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c2 {
+    width: 15.66666667%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c3 {
+    width: 24%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c4 {
+    width: 32.33333333%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c5 {
+    width: 40.66666667%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c6 {
+    width: 49%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c7 {
+    width: 57.33333333%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c8 {
+    width: 65.66666667%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c9 {
+    width: 74%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c10 {
+    width: 82.33333333%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c11 {
+    width: 90.66666667%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .c12 {
+    width: 99%;
+    margin-bottom: 1%;
+    padding: 0px 0.3%;
+  }
+  .p1 {
+    margin-left: 8.83333333%;
+  }
+  .p4 {
+    margin-left: 33.83333333%;
+  }
+  .p6 {
+    margin-left: 50.5%;
+  }
+  
+  
+  
+  
+  
+  
+  
+}
+figure {
+  margin: 0;
+  position: relative;
+}
+figure img {
+  display: block;
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.no-touch figure:hover img,
+figure.hover img {
+  -webkit-transform: translateY(-95px);
+  -moz-transform: translateY(-95px);
+  -ms-transform: translateY(-95px);
+  -o-transform: translateY(-95px);
+  transform: translateY(-95px);
+}
+figure figcaption {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+figure header {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+figure span {
+  display: block;
+  line-height: 1.2;
+}

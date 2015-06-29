@@ -1,0 +1,32 @@
+/* Numero de Colunas */
+/* por % */
+/* Tamanho da quebra (mobile) */
+.linha,
+.col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.linha {
+  max-width: 1080px;
+  margin: 0px auto;
+  padding: 0 1%;
+}
+.linha:before,
+.linha:after {
+  content: "";
+  display: table;
+}
+.linha:after {
+  clear: both;
+}
+.linha .linha {
+  margin: 0 -1%;
+}
+.col {
+  float: left;
+  width: 100%;
+  margin-bottom: 2%;
+  padding: 0px 0.3%;
+  overflow: hidden;
+}
